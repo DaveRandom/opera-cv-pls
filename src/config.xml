@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="https://github.com/cv-pls/opera-cv-pls/" viewmodes="minimized" version="0.20-beta1">
+
+  <name>[cv-pls]</name>
+  <description>Helps to close questions on StackOverflow</description>
+  <author>[cv-ring]</author>
+  <license href="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+
+  <icon src="/cv-pls/icons/icon18.png" />
+  <icon src="/cv-pls/icons/icon64.png" />
+  <icon src="/cv-pls/icons/icon128.png" />
+
+  <content src="/js/pages/background.html" encoding="utf-8" type="text/html" />
+
+  <access origin="http://stackoverflow.com" subdomains="true" />
+  <access origin="https://stackoverflow.com" subdomains="true" />
+  <access origin="http://cvbacklog.gordon-oheim.biz" subdomains="false" />
+
+  <preference name="oneBox" value="true" readonly="false" />
+  <preference name="oneBoxHeight" value="30" readonly="false"/>
+  <preference name="removeCompletedOneboxes" value="false" readonly="false" />
+
+  <preference name="cvPlsButton" value="true" readonly="false" />
+  <preference name="delvPlsButton" value="false" readonly="false" />
+
+  <preference name="soundNotification" value="false" readonly="false" />
+  <preference name="avatarNotification" value="false" readonly="false" />
+  <preference name="removeLostNotifications" value="false" readonly="false" />
+  <preference name="removeCompletedNotifications" value="false" readonly="false" />
+  <preference name="desktopNotification" value="false" readonly="false" />
+
+  <preference name="showCloseStatus" value="true" readonly="false" />
+  <preference name="pollCloseStatus" value="false" readonly="false" />
+  <preference name="pollInterval" value="5" readonly="false" />
+  <preference name="strikethroughCompleted" value="false" readonly="false" />
+
+  <preference name="backlogEnabled" value="false" readonly="false" />
+  <preference name="backlogAmount" value="5" readonly="false" />
+  <preference name="backlogRefresh" value="true" readonly="false" />
+  <preference name="backlogRefreshInterval" value="60" readonly="false" />
+
+</widget>
